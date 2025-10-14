@@ -1,0 +1,21 @@
+.app-title {
+  font-weight: 700;
+  font-size: 50px;
+  margin: 10px;
+}
+
+input {
+  width: 100%;
+}
+
+.itemsContainer {
+  text-align: left;
+}
+
+.react-row{
+margin: 10px 5px;
+}
+
+.react-Button{
+  min-width: 70px;
+}
