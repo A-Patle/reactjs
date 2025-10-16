@@ -1,0 +1,56 @@
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-items: center;
+  margin-top: 15px;
+}
+
+.button {
+  width: 55px;
+  height: 55px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  background: linear-gradient(145deg, #f0f0f0, #dcdcdc);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px #b5b5b5, -4px -4px 10px #ffffff;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(145deg, #ffffff, #d8d8d8);
+}
+
+.button:active {
+  box-shadow: inset 4px 4px 8px #b5b5b5, inset -4px -4px 8px #ffffff;
+  transform: scale(0.98);
+}
+
+/* Highlight operator buttons */
+.button:nth-child(4n),
+.button:nth-child(2),
+.button:nth-child(3),
+.button:first-child {
+  background: linear-gradient(145deg, #f8e5e5, #f0c8c8);
+  color: #b30000;
+  font-weight: 600;
+}
+
+
+/* Equals button styling */
+.button:nth-child(19) {
+  background: linear-gradient(145deg, #c3f0c8, #a6e3af);
+  color: #1b6b1b;
+  font-weight: 700;
+}
+
+.equals {
+  grid-column: span 2;      /* ✅ makes = take 2 column width */
+  background-color: #4CAF50;
+  color: white;
+  width: 120px;           /* ✅ makes = button wider */
+}
